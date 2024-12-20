@@ -1,0 +1,790 @@
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044453C в функции _M_is_leaked() в файле d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRe0, Thread: 0x11FC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0044453C in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: _M_is_leaked() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x0047345B in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: swap() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AE09 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: operator=() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043E9F5 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: operator=() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041D02C in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: main() at D:/Хайрулов Иван/генератор картины 2год/main.cpp (155):
+
+    153:     btn[7] = {250, 55, 170, 35, "сохранить", TX_LIGHTBLUE, ""};
+    154:     btn[8] = {440, 55, 170, 35, "загрузить", TX_LIGHTBLUE, ""};
+=>  155:     btn[9] = {630, 55, 170, 35, "помощ", TX_LIGHTBLUE, ""};
+    156: 
+    157: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  1 2024 18:19:54, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 01 2024 18:20:15
+
+Run file:	D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe
+Directory:	D:\Хайрулов Иван\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044453C в функции _M_is_leaked() в файле d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRe0, Thread: 0x11FC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0044453C in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: _M_is_leaked() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x0047345B in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: swap() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AE09 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: operator=() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043E9F5 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: operator=() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041D02C in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: main() at D:/Хайрулов Иван/генератор картины 2год/main.cpp (155):
+
+    153:     btn[7] = {250, 55, 170, 35, "сохранить", TX_LIGHTBLUE, ""};
+    154:     btn[8] = {440, 55, 170, 35, "загрузить", TX_LIGHTBLUE, ""};
+=>  155:     btn[9] = {630, 55, 170, 35, "помощ", TX_LIGHTBLUE, ""};
+    156: 
+    157: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  1 2024 18:19:54, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 01 2024 18:20:15
+
+Run file:	D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe
+Directory:	D:\Хайрулов Иван\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00401433 в функции __exchange_and_add() в файле d:/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h на строке 47. Попытка записать данные по адресу 0x007FFFFC в модуле D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdRe0, Thread: 0x29D4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00401433 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: __exchange_and_add() at d:/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h (47):
+
+     45:   static inline _Atomic_word 
+     46:   __exchange_and_add(volatile _Atomic_word* __mem, int __val)
+=>   47:   { return __atomic_fetch_add(__mem, __val, __ATOMIC_ACQ_REL); }
+     48: 
+     49:   static inline void
+
+# 1 0x004014A5 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: __exchange_and_add_dispatch() at d:/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h (80):
+
+     78: #ifdef __GTHREADS
+     79:     if (__gthread_active_p())
+=>   80:       return __exchange_and_add(__mem, __val);
+     81:     else
+     82:       return __exchange_and_add_single(__mem, __val);
+
+# 2 0x00473A0A in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: _M_dispose() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0047B8E3 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0043F732 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 5 0x0041E8D3 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: main() at D:/Хайрулов Иван/генератор картины 2год/main.cpp (191):
+
+    189:     menu_pic[16] = {10, 200, "pictures/животные/жираф.bmp", txLoadImage("pictures/животные/жираф.bmp"), 80, 80, 400, 400, false, "животные"};
+    190:     menu_pic[17] = {10, 300, "pictures/животные/нюхач.bmp", txLoadImage("pictures/животные/нюхач.bmp"), 80, 80, 400, 400, false, "животные"};
+=>  191:     menu_pic[18] = {10, 400, "pictures/животные/кот.bmp", txLoadImage("pictures/животные/кот.bmp"), 80, 80, 400, 400, false, "животные"};
+    192: 
+    193: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 11 2024 18:01:31, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 11 2024 18:01:53
+
+Run file:	D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe
+Directory:	D:\Хайрулов Иван\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00401433 в функции __exchange_and_add() в файле d:/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h на строке 47. Попытка записать данные по адресу 0x007FFFFC в модуле D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdRe0, Thread: 0x29D4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00401433 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: __exchange_and_add() at d:/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h (47):
+
+     45:   static inline _Atomic_word 
+     46:   __exchange_and_add(volatile _Atomic_word* __mem, int __val)
+=>   47:   { return __atomic_fetch_add(__mem, __val, __ATOMIC_ACQ_REL); }
+     48: 
+     49:   static inline void
+
+# 1 0x004014A5 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: __exchange_and_add_dispatch() at d:/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h (80):
+
+     78: #ifdef __GTHREADS
+     79:     if (__gthread_active_p())
+=>   80:       return __exchange_and_add(__mem, __val);
+     81:     else
+     82:       return __exchange_and_add_single(__mem, __val);
+
+# 2 0x00473A0A in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: _M_dispose() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0047B8E3 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0043F732 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 5 0x0041E8D3 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: main() at D:/Хайрулов Иван/генератор картины 2год/main.cpp (191):
+
+    189:     menu_pic[16] = {10, 200, "pictures/животные/жираф.bmp", txLoadImage("pictures/животные/жираф.bmp"), 80, 80, 400, 400, false, "животные"};
+    190:     menu_pic[17] = {10, 300, "pictures/животные/нюхач.bmp", txLoadImage("pictures/животные/нюхач.bmp"), 80, 80, 400, 400, false, "животные"};
+=>  191:     menu_pic[18] = {10, 400, "pictures/животные/кот.bmp", txLoadImage("pictures/животные/кот.bmp"), 80, 80, 400, 400, false, "животные"};
+    192: 
+    193: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 11 2024 18:01:31, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 11 2024 18:01:52
+
+Run file:	D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe
+Directory:	D:\Хайрулов Иван\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe,
+
+ВНЕЗАПНО: std::terminate(): Неперехваченное исключение в функции main() или в деструкторе, или другая фатальная ошибка C++. 
+
+Объект исключения C++: std::out_of_range, what(): "basic_string::substr", его адрес 0x04A558B0.
+
+Используйте try/catch блоки, перехватывайте catch (...), проверяйте вызовы виртуальных функций, разбирайтесь, в чем дело.
+
+С помощью std::set_terminate() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F92FC (32-bit), Flags: CMdRe0, Thread: 0x604 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0040ACB9 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: _txOnTerminate() at d:/codeblocks/mingw/include/txlib.h (11016)
+# 1 0x0043CC17 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: __cxxabiv1::__terminate()
+
+# 2 0x00445BB8 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: _M_check() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0044581F in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: substr() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041E9C7 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: main() at D:/Хайрулов Иван/генератор картины 2год/main.cpp (200):
+
+    198:     int pos1 = menu_pic[i].adress.find("/");
+    199:     int pos2 = menu_pic[i].adress.find("/", pos1+1);
+=>  200:     menu_pic[i].category = menu_pic[i].adress.substr(pos1+1 - (pos2+1));
+    201: 
+    202:    }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 15 2024 17:52:31, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 15 2024 17:52:57
+
+Run file:	D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe
+Directory:	D:\Хайрулов Иван\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe,
+
+ВНЕЗАПНО: std::terminate(): Неперехваченное исключение в функции main() или в деструкторе, или другая фатальная ошибка C++. 
+
+Объект исключения C++: std::out_of_range, what(): "basic_string::substr", его адрес 0x04AA58C8.
+
+Используйте try/catch блоки, перехватывайте catch (...), проверяйте вызовы виртуальных функций, разбирайтесь, в чем дело.
+
+С помощью std::set_terminate() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F92FC (32-bit), Flags: CMdRe0, Thread: 0x1304 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0040ACB9 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: _txOnTerminate() at d:/codeblocks/mingw/include/txlib.h (11016)
+# 1 0x0043CC17 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: __cxxabiv1::__terminate()
+
+# 2 0x00445BB8 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: _M_check() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0044581F in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: substr() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041E9C7 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: main() at D:/Хайрулов Иван/генератор картины 2год/main.cpp (200):
+
+    198:     int pos1 = menu_pic[i].adress.find("/");
+    199:     int pos2 = menu_pic[i].adress.find("/", pos1+1);
+=>  200:     menu_pic[i].category = menu_pic[i].adress.substr(pos1+1 - (pos2+1));
+    201: 
+    202:    }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 15 2024 17:54:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 15 2024 17:55:17
+
+Run file:	D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe
+Directory:	D:\Хайрулов Иван\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe,
+
+ВНЕЗАПНО: std::terminate(): Неперехваченное исключение в функции main() или в деструкторе, или другая фатальная ошибка C++. 
+
+Объект исключения C++: std::out_of_range, what(): "basic_string::substr", его адрес 0x04A758B0.
+
+Используйте try/catch блоки, перехватывайте catch (...), проверяйте вызовы виртуальных функций, разбирайтесь, в чем дело.
+
+С помощью std::set_terminate() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F92FC (32-bit), Flags: CMdRe0, Thread: 0x118C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0040ACB9 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: _txOnTerminate() at d:/codeblocks/mingw/include/txlib.h (11016)
+# 1 0x0043CC27 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: __cxxabiv1::__terminate()
+
+# 2 0x00445BC8 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: _M_check() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0044582F in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: substr() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041E9C7 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: main() at D:/Хайрулов Иван/генератор картины 2год/main.cpp (200):
+
+    198:     int pos1 = menu_pic[i].adress.find("/");
+    199:     int pos2 = menu_pic[i].adress.find("/", pos1+1);
+=>  200:     menu_pic[i].category = menu_pic[i].adress.substr(pos1+1 - (pos2+1));
+    201: 
+    202:    }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 15 2024 17:58:03, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 15 2024 17:58:25
+
+Run file:	D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe
+Directory:	D:\Хайрулов Иван\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe,
+
+ВНЕЗАПНО: std::terminate(): Неперехваченное исключение в функции main() или в деструкторе, или другая фатальная ошибка C++. 
+
+Объект исключения C++: std::out_of_range, what(): "basic_string::substr", его адрес 0x04A658C8.
+
+Используйте try/catch блоки, перехватывайте catch (...), проверяйте вызовы виртуальных функций, разбирайтесь, в чем дело.
+
+С помощью std::set_terminate() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F92FC (32-bit), Flags: CMdRe0, Thread: 0x140C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0040ACB9 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: _txOnTerminate() at d:/codeblocks/mingw/include/txlib.h (11016)
+# 1 0x0043CC17 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: __cxxabiv1::__terminate()
+
+# 2 0x00445BB8 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: _M_check() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0044581F in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: substr() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041E9C7 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: main() at D:/Хайрулов Иван/генератор картины 2год/main.cpp (200):
+
+    198:     int pos1 = menu_pic[i].adress.find("/");
+    199:     int pos2 = menu_pic[i].adress.find("/", pos1+1);
+=>  200:     menu_pic[i].category = menu_pic[i].adress.substr(pos1+1 - (pos2+1));
+    201: 
+    202:    }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 15 2024 18:00:48, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 15 2024 18:01:10
+
+Run file:	D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe
+Directory:	D:\Хайрулов Иван\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe,
+
+ВНЕЗАПНО: std::terminate(): Неперехваченное исключение в функции main() или в деструкторе, или другая фатальная ошибка C++. 
+
+Объект исключения C++: std::logic_error, what(): "basic_string::_S_construct null not valid", его адрес 0x04A347F8.
+
+Используйте try/catch блоки, перехватывайте catch (...), проверяйте вызовы виртуальных функций, разбирайтесь, в чем дело.
+
+С помощью std::set_terminate() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F92FC (32-bit), Flags: CMdRe0, Thread: 0x1304 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0040ACB9 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: _txOnTerminate() at d:/codeblocks/mingw/include/txlib.h (11016)
+# 1 0x0043CC47 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: __cxxabiv1::__terminate()
+
+# 2 0x00473135 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: _S_construct<char const*>() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x004737DF in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: _S_construct_aux<char const*>() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x00473087 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: _S_construct<char const*>() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 5 0x0047A3DD in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 6 0x0041D2F9 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: main() at D:/Хайрулов Иван/генератор картины 2год/main.cpp (167):
+
+    165:     //картинки в меню
+    166:     Picture menu_pic[count_pic];
+=>  167:     menu_pic[0] = {10, 100, "pictures/еда/Яблоки.bmp", txLoadImage("pictures/еда/Яблоки.bmp"), 50, 50, 100, 100, false};
+    168:     menu_pic[1] = {10, 200, "pictures/еда/авокадо.bmp", txLoadImage("pictures/еда/авокадо.bmp"), 50, 50, 100, 100, false};
+    169:     menu_pic[2] = {10, 300, "pictures/еда/груша.bmp", txLoadImage("pictures/еда/груша.bmp"), 50, 50, 100, 100, false};
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 15 2024 18:02:46, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 15 2024 18:03:08
+
+Run file:	D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe
+Directory:	D:\Хайрулов Иван\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13568, функция: HDC__* {anonymous}::TX::txLoadImage(const char*, int, int, unsigned int, unsigned int),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "filename && *filename".
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F92FC (32-bit), Flags: CMdRe0, Thread: 0x181C (Main), GetLastError(): 160 (Неверны один или несколько аргументов), errno: 22 (Invalid argument). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00415E82 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: txLoadImage() at d:/codeblocks/mingw/include/txlib.h (13568)
+
+# 1 0x0041DB8E in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: main() at D:/Хайрулов Иван/генератор картины 2год/main.cpp (274):
+
+    272:     }
+    273: 
+=>  274:     menu_pic[i].image =  txLoadImage(menu_pic[i].adress.c_str());
+    275: 
+    276:    }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 22 2024 17:57:51, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 22 2024 17:58:15
+
+Run file:	D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe
+Directory:	D:\Хайрулов Иван\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13568, функция: HDC__* {anonymous}::TX::txLoadImage(const char*, int, int, unsigned int, unsigned int),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "filename && *filename".
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F92FC (32-bit), Flags: CMdRe0, Thread: 0x1D20 (Main), GetLastError(): 160 (Неверны один или несколько аргументов), errno: 22 (Invalid argument). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00415E82 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: txLoadImage() at d:/codeblocks/mingw/include/txlib.h (13568)
+
+# 1 0x0041DB8E in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: main() at D:/Хайрулов Иван/генератор картины 2год/main.cpp (274):
+
+    272:     }
+    273: 
+=>  274:     menu_pic[i].image =  txLoadImage(menu_pic[i].adress.c_str());
+    275: 
+    276:    }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 22 2024 17:57:51, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 22 2024 18:01:53
+
+Run file:	D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe
+Directory:	D:\Хайрулов Иван\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13568, функция: HDC__* {anonymous}::TX::txLoadImage(const char*, int, int, unsigned int, unsigned int),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "filename && *filename".
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F92FC (32-bit), Flags: CMdRe0, Thread: 0x53C (Main), GetLastError(): 160 (Неверны один или несколько аргументов), errno: 22 (Invalid argument). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00415E82 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: txLoadImage() at d:/codeblocks/mingw/include/txlib.h (13568)
+
+# 1 0x0041DB8E in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: main() at D:/Хайрулов Иван/генератор картины 2год/main.cpp (275):
+
+    273:     }
+    274: 
+=>  275:     menu_pic[i].image =  txLoadImage(menu_pic[i].adress.c_str());
+    276: 
+    277:    }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 22 2024 18:11:26, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 22 2024 18:11:48
+
+Run file:	D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe
+Directory:	D:\Хайрулов Иван\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13568, функция: HDC__* {anonymous}::TX::txLoadImage(const char*, int, int, unsigned int, unsigned int),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "filename && *filename".
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F92FC (32-bit), Flags: CMdRe0, Thread: 0x1E38 (Main), GetLastError(): 160 (Неверны один или несколько аргументов), errno: 22 (Invalid argument). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00415E82 in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: txLoadImage() at d:/codeblocks/mingw/include/txlib.h (13568)
+
+# 1 0x0041DB8E in D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe: main() at D:/Хайрулов Иван/генератор картины 2год/main.cpp (275):
+
+    273:     }
+    274: 
+=>  275:     menu_pic[i].image =  txLoadImage(menu_pic[i].adress.c_str());
+    276: 
+    277:    }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 22 2024 18:11:26, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 22 2024 18:25:51
+
+Run file:	D:\Хайрулов Иван\генератор картины 2год\bin\Debug\генератор картины 2год.exe
+Directory:	D:\Хайрулов Иван\генератор картины 2год
+
+--------------------------------------------------

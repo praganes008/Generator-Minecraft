@@ -1,0 +1,10 @@
+MSYS-1.0.12 Build:2011-07-20 17:52
+Exception: STATUS_ACCESS_VIOLATION at eip=6801364A
+eax=00005005 ebx=00005005 ecx=2F33B468 edx=00850000 esi=0068FBB4 edi=0068F794
+ebp=0068F604 esp=0068F5EC program=D:\CodeBlocks\MinGW\bin\sh.exe
+cs=0023 ds=002B es=002B fs=0053 gs=002B ss=002B
+Stack trace:
+Frame     Function  Args
+0068F604  6801364A  (00005005, 00000000, 00110000, 00000000)
+ 144861 [main] sh 2404 handle_exceptions: Exception: STATUS_ACCESS_VIOLATION
+ 152680 [main] sh 2404 handle_exceptions: Error while dumping state (probably corrupted stack)

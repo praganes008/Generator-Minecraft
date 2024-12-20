@@ -1,0 +1,1819 @@
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Генератор картины\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004516A3 в функции size() в файле d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x00000058 в модуле E:\Генератор картины\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005052FC (32-bit), Flags: CMdRe0, Thread: 0x6D4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004516A3 in E:\Генератор картины\генератор картины 2год\main.exe: size() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004B255C in E:\Генератор картины\генератор картины 2год\main.exe: operator==<char>() at d:/codeblocks/mingw/include/c++/4.8.1/new (57):
+
+     55:   {
+     56:   public:
+=>   57:     bad_alloc() throw() { }
+     58: 
+     59:     // This declaration is not useless:
+
+# 2 0x0042C6BB in E:\Генератор картины\генератор картины 2год\main.exe: main() at E:/Генератор картины/генератор картины 2год/main.cpp (123):
+
+    121:              for(int npic=0; npic<4; nbutton++)
+    122:              {
+=>  123:                   if(pic[npic].category == btn[nbutton].category)
+    124:                   {
+    125:                   pic[npic].visible = true;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool Button::click() at E:\Генератор картины\генератор картины 2год\main.cpp (31):
+
+     29:                 return( txMouseButtons() == 1 &
+     30:                 txMouseX()>x & txMouseX() < x+width &
+=>   31:                 txMouseY()>y & txMouseY() < y+height );
+     32: 
+     33:     }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2024 17:27:36, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2024 17:28:08
+
+Run file:	E:\Генератор картины\генератор картины 2год\main.exe
+Directory:	E:\Генератор картины\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Генератор картины\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004516A3 в функции size() в файле d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x00000058 в модуле E:\Генератор картины\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005052FC (32-bit), Flags: CMdRe0, Thread: 0x6D4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004516A3 in E:\Генератор картины\генератор картины 2год\main.exe: size() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004B255C in E:\Генератор картины\генератор картины 2год\main.exe: operator==<char>() at d:/codeblocks/mingw/include/c++/4.8.1/new (57):
+
+     55:   {
+     56:   public:
+=>   57:     bad_alloc() throw() { }
+     58: 
+     59:     // This declaration is not useless:
+
+# 2 0x0042C6BB in E:\Генератор картины\генератор картины 2год\main.exe: main() at E:/Генератор картины/генератор картины 2год/main.cpp (123):
+
+    121:              for(int npic=0; npic<4; nbutton++)
+    122:              {
+=>  123:                   if(pic[npic].category == btn[nbutton].category)
+    124:                   {
+    125:                   pic[npic].visible = true;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool Button::click() at E:\Генератор картины\генератор картины 2год\main.cpp (31):
+
+     29:                 return( txMouseButtons() == 1 &
+     30:                 txMouseX()>x & txMouseX() < x+width &
+=>   31:                 txMouseY()>y & txMouseY() < y+height );
+     32: 
+     33:     }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2024 17:27:36, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2024 17:28:08
+
+Run file:	E:\Генератор картины\генератор картины 2год\main.exe
+Directory:	E:\Генератор картины\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Генератор картины\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004516A3 в функции size() в файле d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x00000058 в модуле E:\Генератор картины\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005052FC (32-bit), Flags: CMdRe0, Thread: 0x2938 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004516A3 in E:\Генератор картины\генератор картины 2год\main.exe: size() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004B255C in E:\Генератор картины\генератор картины 2год\main.exe: operator==<char>() at d:/codeblocks/mingw/include/c++/4.8.1/new (57):
+
+     55:   {
+     56:   public:
+=>   57:     bad_alloc() throw() { }
+     58: 
+     59:     // This declaration is not useless:
+
+# 2 0x0042C6BB in E:\Генератор картины\генератор картины 2год\main.exe: main() at E:/Генератор картины/генератор картины 2год/main.cpp (123):
+
+    121:              for(int npic=0; npic<4; nbutton++)
+    122:              {
+=>  123:                   if(pic[npic].category == btn[nbutton].category)
+    124:                   {
+    125:                   pic[npic].visible = true;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool Button::click() at E:\Генератор картины\генератор картины 2год\main.cpp (31):
+
+     29:                 return( txMouseButtons() == 1 &
+     30:                 txMouseX()>x & txMouseX() < x+width &
+=>   31:                 txMouseY()>y & txMouseY() < y+height );
+     32: 
+     33:     }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2024 17:28:54, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2024 17:29:30
+
+Run file:	E:\Генератор картины\генератор картины 2год\main.exe
+Directory:	E:\Генератор картины\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Генератор картины\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004516A3 в функции size() в файле d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x00000058 в модуле E:\Генератор картины\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005052FC (32-bit), Flags: CMdRe0, Thread: 0x2938 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004516A3 in E:\Генератор картины\генератор картины 2год\main.exe: size() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004B255C in E:\Генератор картины\генератор картины 2год\main.exe: operator==<char>() at d:/codeblocks/mingw/include/c++/4.8.1/new (57):
+
+     55:   {
+     56:   public:
+=>   57:     bad_alloc() throw() { }
+     58: 
+     59:     // This declaration is not useless:
+
+# 2 0x0042C6BB in E:\Генератор картины\генератор картины 2год\main.exe: main() at E:/Генератор картины/генератор картины 2год/main.cpp (123):
+
+    121:              for(int npic=0; npic<4; nbutton++)
+    122:              {
+=>  123:                   if(pic[npic].category == btn[nbutton].category)
+    124:                   {
+    125:                   pic[npic].visible = true;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool Button::click() at E:\Генератор картины\генератор картины 2год\main.cpp (31):
+
+     29:                 return( txMouseButtons() == 1 &
+     30:                 txMouseX()>x & txMouseX() < x+width &
+=>   31:                 txMouseY()>y & txMouseY() < y+height );
+     32: 
+     33:     }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2024 17:28:54, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2024 17:29:31
+
+Run file:	E:\Генератор картины\генератор картины 2год\main.exe
+Directory:	E:\Генератор картины\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Генератор картины\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00401433 в функции __exchange_and_add() в файле d:/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h на строке 47. Попытка записать данные по адресу 0x004CC789 в модуле E:\Генератор картины\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005062FC (32-bit), Flags: CMdRe0, Thread: 0x1D0C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00401433 in E:\Генератор картины\генератор картины 2год\main.exe: __exchange_and_add() at d:/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h (47):
+
+     45:   static inline _Atomic_word 
+     46:   __exchange_and_add(volatile _Atomic_word* __mem, int __val)
+=>   47:   { return __atomic_fetch_add(__mem, __val, __ATOMIC_ACQ_REL); }
+     48: 
+     49:   static inline void
+
+# 1 0x004014A5 in E:\Генератор картины\генератор картины 2год\main.exe: __exchange_and_add_dispatch() at d:/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h (80):
+
+     78: #ifdef __GTHREADS
+     79:     if (__gthread_active_p())
+=>   80:       return __exchange_and_add(__mem, __val);
+     81:     else
+     82:       return __exchange_and_add_single(__mem, __val);
+
+# 2 0x0048001A in E:\Генератор картины\генератор картины 2год\main.exe: _M_dispose() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x00487F13 in E:\Генератор картины\генератор картины 2год\main.exe at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0044BD5A in E:\Генератор картины\генератор картины 2год\main.exe at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 5 0x0042C643 in E:\Генератор картины\генератор картины 2год\main.exe: main() at E:/Генератор картины/генератор картины 2год/main.cpp (91):
+
+     89:     pic[3] = {10, 100, txLoadImage("pictures/предметы/ваза1.bmp"), 80, 80, 400, 400, false, "предметы"};
+     90: 
+=>   91:     pic[4] = {10, 100, txLoadImage("pictures/предметы/ноутбук1.bmp"), 80, 80, 400, 400, false, "предметы"};
+     92: 
+     93: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at E:\Генератор картины\генератор картины 2год\main.cpp (91):
+
+     89:     pic[3] = {10, 100, txLoadImage("pictures/предметы/ваза1.bmp"), 80, 80, 400, 400, false, "предметы"};
+     90: 
+=>   91:     pic[4] = {10, 100, txLoadImage("pictures/предметы/ноутбук1.bmp"), 80, 80, 400, 400, false, "предметы"};
+     92: 
+     93: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2024 18:28:03, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2024 18:28:39
+
+Run file:	E:\Генератор картины\генератор картины 2год\main.exe
+Directory:	E:\Генератор картины\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Генератор картины\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00401433 в функции __exchange_and_add() в файле d:/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h на строке 47. Попытка записать данные по адресу 0x004CC789 в модуле E:\Генератор картины\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005062FC (32-bit), Flags: CMdRe0, Thread: 0x1D0C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00401433 in E:\Генератор картины\генератор картины 2год\main.exe: __exchange_and_add() at d:/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h (47):
+
+     45:   static inline _Atomic_word 
+     46:   __exchange_and_add(volatile _Atomic_word* __mem, int __val)
+=>   47:   { return __atomic_fetch_add(__mem, __val, __ATOMIC_ACQ_REL); }
+     48: 
+     49:   static inline void
+
+# 1 0x004014A5 in E:\Генератор картины\генератор картины 2год\main.exe: __exchange_and_add_dispatch() at d:/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h (80):
+
+     78: #ifdef __GTHREADS
+     79:     if (__gthread_active_p())
+=>   80:       return __exchange_and_add(__mem, __val);
+     81:     else
+     82:       return __exchange_and_add_single(__mem, __val);
+
+# 2 0x0048001A in E:\Генератор картины\генератор картины 2год\main.exe: _M_dispose() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x00487F13 in E:\Генератор картины\генератор картины 2год\main.exe at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0044BD5A in E:\Генератор картины\генератор картины 2год\main.exe at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 5 0x0042C643 in E:\Генератор картины\генератор картины 2год\main.exe: main() at E:/Генератор картины/генератор картины 2год/main.cpp (91):
+
+     89:     pic[3] = {10, 100, txLoadImage("pictures/предметы/ваза1.bmp"), 80, 80, 400, 400, false, "предметы"};
+     90: 
+=>   91:     pic[4] = {10, 100, txLoadImage("pictures/предметы/ноутбук1.bmp"), 80, 80, 400, 400, false, "предметы"};
+     92: 
+     93: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at E:\Генератор картины\генератор картины 2год\main.cpp (91):
+
+     89:     pic[3] = {10, 100, txLoadImage("pictures/предметы/ваза1.bmp"), 80, 80, 400, 400, false, "предметы"};
+     90: 
+=>   91:     pic[4] = {10, 100, txLoadImage("pictures/предметы/ноутбук1.bmp"), 80, 80, 400, 400, false, "предметы"};
+     92: 
+     93: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2024 18:28:03, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 30 2024 18:28:39
+
+Run file:	E:\Генератор картины\генератор картины 2год\main.exe
+Directory:	E:\Генератор картины\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Генератор картины\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00401433 в функции __exchange_and_add() в файле d:/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h на строке 47. Попытка записать данные по адресу 0x004CD789 в модуле E:\Генератор картины\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x1FF0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00401433 in E:\Генератор картины\генератор картины 2год\main.exe: __exchange_and_add() at d:/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h (47):
+
+     45:   static inline _Atomic_word 
+     46:   __exchange_and_add(volatile _Atomic_word* __mem, int __val)
+=>   47:   { return __atomic_fetch_add(__mem, __val, __ATOMIC_ACQ_REL); }
+     48: 
+     49:   static inline void
+
+# 1 0x004014A5 in E:\Генератор картины\генератор картины 2год\main.exe: __exchange_and_add_dispatch() at d:/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h (80):
+
+     78: #ifdef __GTHREADS
+     79:     if (__gthread_active_p())
+=>   80:       return __exchange_and_add(__mem, __val);
+     81:     else
+     82:       return __exchange_and_add_single(__mem, __val);
+
+# 2 0x0048071A in E:\Генератор картины\генератор картины 2год\main.exe: _M_dispose() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x00488613 in E:\Генератор картины\генератор картины 2год\main.exe at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0044C45A in E:\Генератор картины\генератор картины 2год\main.exe at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 5 0x0042CA4A in E:\Генератор картины\генератор картины 2год\main.exe: main() at E:/Генератор картины/генератор картины 2год/main.cpp (104):
+
+    102:     menu_pic[6] = {10, 100, txLoadImage("pictures/мебель/стол1.bmp"), 80, 80, 400, 400, false, "мебель"};
+    103:     menu_pic[7] = {10, 200, txLoadImage("pictures/мебель/стол2.bmp"), 80, 80, 400, 400, false, "мебель"};
+=>  104:     menu_pic[8] = {10, 300, txLoadImage("pictures/мебель/стол3.bmp"), 80, 80, 400, 400, false, "мебель"};
+    105: 
+    106:     //coздание массива картинок на рабочей области
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at E:\Генератор картины\генератор картины 2год\main.cpp (104):
+
+    102:     menu_pic[6] = {10, 100, txLoadImage("pictures/мебель/стол1.bmp"), 80, 80, 400, 400, false, "мебель"};
+    103:     menu_pic[7] = {10, 200, txLoadImage("pictures/мебель/стол2.bmp"), 80, 80, 400, 400, false, "мебель"};
+=>  104:     menu_pic[8] = {10, 300, txLoadImage("pictures/мебель/стол3.bmp"), 80, 80, 400, 400, false, "мебель"};
+    105: 
+    106:     //coздание массива картинок на рабочей области
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Oct  4 2024 18:14:58, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 04 2024 18:15:31
+
+Run file:	E:\Генератор картины\генератор картины 2год\main.exe
+Directory:	E:\Генератор картины\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Генератор картины\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00401433 в функции __exchange_and_add() в файле d:/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h на строке 47. Попытка записать данные по адресу 0x004CD789 в модуле E:\Генератор картины\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x1FF0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00401433 in E:\Генератор картины\генератор картины 2год\main.exe: __exchange_and_add() at d:/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h (47):
+
+     45:   static inline _Atomic_word 
+     46:   __exchange_and_add(volatile _Atomic_word* __mem, int __val)
+=>   47:   { return __atomic_fetch_add(__mem, __val, __ATOMIC_ACQ_REL); }
+     48: 
+     49:   static inline void
+
+# 1 0x004014A5 in E:\Генератор картины\генератор картины 2год\main.exe: __exchange_and_add_dispatch() at d:/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h (80):
+
+     78: #ifdef __GTHREADS
+     79:     if (__gthread_active_p())
+=>   80:       return __exchange_and_add(__mem, __val);
+     81:     else
+     82:       return __exchange_and_add_single(__mem, __val);
+
+# 2 0x0048071A in E:\Генератор картины\генератор картины 2год\main.exe: _M_dispose() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x00488613 in E:\Генератор картины\генератор картины 2год\main.exe at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0044C45A in E:\Генератор картины\генератор картины 2год\main.exe at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 5 0x0042CA4A in E:\Генератор картины\генератор картины 2год\main.exe: main() at E:/Генератор картины/генератор картины 2год/main.cpp (104):
+
+    102:     menu_pic[6] = {10, 100, txLoadImage("pictures/мебель/стол1.bmp"), 80, 80, 400, 400, false, "мебель"};
+    103:     menu_pic[7] = {10, 200, txLoadImage("pictures/мебель/стол2.bmp"), 80, 80, 400, 400, false, "мебель"};
+=>  104:     menu_pic[8] = {10, 300, txLoadImage("pictures/мебель/стол3.bmp"), 80, 80, 400, 400, false, "мебель"};
+    105: 
+    106:     //coздание массива картинок на рабочей области
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at E:\Генератор картины\генератор картины 2год\main.cpp (104):
+
+    102:     menu_pic[6] = {10, 100, txLoadImage("pictures/мебель/стол1.bmp"), 80, 80, 400, 400, false, "мебель"};
+    103:     menu_pic[7] = {10, 200, txLoadImage("pictures/мебель/стол2.bmp"), 80, 80, 400, 400, false, "мебель"};
+=>  104:     menu_pic[8] = {10, 300, txLoadImage("pictures/мебель/стол3.bmp"), 80, 80, 400, 400, false, "мебель"};
+    105: 
+    106:     //coздание массива картинок на рабочей области
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Oct  4 2024 18:14:58, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 04 2024 18:15:31
+
+Run file:	E:\Генератор картины\генератор картины 2год\main.exe
+Directory:	E:\Генератор картины\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Генератор картины\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00452313 в функции size() в файле d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x00000058 в модуле E:\Генератор картины\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0xCB0 (Main), GetLastError(): 87 (Параметр задан неверно). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00452313 in E:\Генератор картины\генератор картины 2год\main.exe: size() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004B319C in E:\Генератор картины\генератор картины 2год\main.exe: operator==<char>() at d:/codeblocks/mingw/include/c++/4.8.1/new (57):
+
+     55:   {
+     56:   public:
+=>   57:     bad_alloc() throw() { }
+     58: 
+     59:     // This declaration is not useless:
+
+# 2 0x0042CCCD in E:\Генератор картины\генератор картины 2год\main.exe: main() at E:/Генератор картины/генератор картины 2год/main.cpp (152):
+
+    150:              {
+    151:                 menu_pic[npic].visible = false;
+=>  152:                       if(menu_pic[npic].category == btn[nbutton].category)
+    153:                       {
+    154:                       menu_pic[npic].visible = true;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool Button::click() at E:\Генератор картины\генератор картины 2год\main.cpp (31):
+
+     29:                 return( txMouseButtons() == 1 &
+     30:                 txMouseX()>x & txMouseX() < x+width &
+=>   31:                 txMouseY()>y & txMouseY() < y+height );
+     32:     }
+     33: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Oct  7 2024 18:27:09, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 07 2024 18:27:41
+
+Run file:	E:\Генератор картины\генератор картины 2год\main.exe
+Directory:	E:\Генератор картины\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Генератор картины\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00452313 в функции size() в файле d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x00000058 в модуле E:\Генератор картины\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0xCB0 (Main), GetLastError(): 87 (Параметр задан неверно). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00452313 in E:\Генератор картины\генератор картины 2год\main.exe: size() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004B319C in E:\Генератор картины\генератор картины 2год\main.exe: operator==<char>() at d:/codeblocks/mingw/include/c++/4.8.1/new (57):
+
+     55:   {
+     56:   public:
+=>   57:     bad_alloc() throw() { }
+     58: 
+     59:     // This declaration is not useless:
+
+# 2 0x0042CCCD in E:\Генератор картины\генератор картины 2год\main.exe: main() at E:/Генератор картины/генератор картины 2год/main.cpp (152):
+
+    150:              {
+    151:                 menu_pic[npic].visible = false;
+=>  152:                       if(menu_pic[npic].category == btn[nbutton].category)
+    153:                       {
+    154:                       menu_pic[npic].visible = true;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool Button::click() at E:\Генератор картины\генератор картины 2год\main.cpp (31):
+
+     29:                 return( txMouseButtons() == 1 &
+     30:                 txMouseX()>x & txMouseX() < x+width &
+=>   31:                 txMouseY()>y & txMouseY() < y+height );
+     32:     }
+     33: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Oct  7 2024 18:27:09, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 07 2024 18:27:41
+
+Run file:	E:\Генератор картины\генератор картины 2год\main.exe
+Directory:	E:\Генератор картины\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Генератор картины\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00452313 в функции size() в файле d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x00000184 в модуле E:\Генератор картины\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0x28B0 (Main), GetLastError(): 87 (Параметр задан неверно). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00452313 in E:\Генератор картины\генератор картины 2год\main.exe: size() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004B319C in E:\Генератор картины\генератор картины 2год\main.exe: operator==<char>() at d:/codeblocks/mingw/include/c++/4.8.1/new (57):
+
+     55:   {
+     56:   public:
+=>   57:     bad_alloc() throw() { }
+     58: 
+     59:     // This declaration is not useless:
+
+# 2 0x0042CCCD in E:\Генератор картины\генератор картины 2год\main.exe: main() at E:/Генератор картины/генератор картины 2год/main.cpp (152):
+
+    150:              {
+    151:                 menu_pic[npic].visible = false;
+=>  152:                       if(menu_pic[npic].category == btn[nbutton].category)
+    153:                       {
+    154:                       menu_pic[npic].visible = true;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool Button::click() at E:\Генератор картины\генератор картины 2год\main.cpp (31):
+
+     29:                 return( txMouseButtons() == 1 &
+     30:                 txMouseX()>x & txMouseX() < x+width &
+=>   31:                 txMouseY()>y & txMouseY() < y+height );
+     32:     }
+     33: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 11 2024 17:06:34, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 11 2024 17:07:23
+
+Run file:	E:\Генератор картины\генератор картины 2год\main.exe
+Directory:	E:\Генератор картины\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Генератор картины\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00452313 в функции size() в файле d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x00000184 в модуле E:\Генератор картины\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0x28B0 (Main), GetLastError(): 87 (Параметр задан неверно). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00452313 in E:\Генератор картины\генератор картины 2год\main.exe: size() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004B319C in E:\Генератор картины\генератор картины 2год\main.exe: operator==<char>() at d:/codeblocks/mingw/include/c++/4.8.1/new (57):
+
+     55:   {
+     56:   public:
+=>   57:     bad_alloc() throw() { }
+     58: 
+     59:     // This declaration is not useless:
+
+# 2 0x0042CCCD in E:\Генератор картины\генератор картины 2год\main.exe: main() at E:/Генератор картины/генератор картины 2год/main.cpp (152):
+
+    150:              {
+    151:                 menu_pic[npic].visible = false;
+=>  152:                       if(menu_pic[npic].category == btn[nbutton].category)
+    153:                       {
+    154:                       menu_pic[npic].visible = true;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool Button::click() at E:\Генератор картины\генератор картины 2год\main.cpp (31):
+
+     29:                 return( txMouseButtons() == 1 &
+     30:                 txMouseX()>x & txMouseX() < x+width &
+=>   31:                 txMouseY()>y & txMouseY() < y+height );
+     32:     }
+     33: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 11 2024 17:06:34, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 11 2024 17:07:23
+
+Run file:	E:\Генератор картины\генератор картины 2год\main.exe
+Directory:	E:\Генератор картины\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Генератор картины\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004523D3 в функции size() в файле d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x006F0066 в модуле E:\Генератор картины\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0x2478 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004523D3 in E:\Генератор картины\генератор картины 2год\main.exe: size() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004B325C in E:\Генератор картины\генератор картины 2год\main.exe: operator==<char>() at d:/codeblocks/mingw/include/c++/4.8.1/new (57):
+
+     55:   {
+     56:   public:
+=>   57:     bad_alloc() throw() { }
+     58: 
+     59:     // This declaration is not useless:
+
+# 2 0x0042CCDA in E:\Генератор картины\генератор картины 2год\main.exe: main() at E:/Генератор картины/генератор картины 2год/main.cpp (154):
+
+    152:              {
+    153:                 menu_pic[npic].visible = false;
+=>  154:                       if(menu_pic[npic].category == btn[nbutton].category)
+    155:                       {
+    156:                       menu_pic[npic].visible = true;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool Button::click() at E:\Генератор картины\генератор картины 2год\main.cpp (31):
+
+     29:                 return( txMouseButtons() == 1 &
+     30:                 txMouseX()>x & txMouseX() < x+width &
+=>   31:                 txMouseY()>y & txMouseY() < y+height );
+     32:     }
+     33: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 11 2024 17:32:28, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 11 2024 17:32:59
+
+Run file:	E:\Генератор картины\генератор картины 2год\main.exe
+Directory:	E:\Генератор картины\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Генератор картины\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004523D3 в функции size() в файле d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x006F0066 в модуле E:\Генератор картины\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0x2478 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004523D3 in E:\Генератор картины\генератор картины 2год\main.exe: size() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004B325C in E:\Генератор картины\генератор картины 2год\main.exe: operator==<char>() at d:/codeblocks/mingw/include/c++/4.8.1/new (57):
+
+     55:   {
+     56:   public:
+=>   57:     bad_alloc() throw() { }
+     58: 
+     59:     // This declaration is not useless:
+
+# 2 0x0042CCDA in E:\Генератор картины\генератор картины 2год\main.exe: main() at E:/Генератор картины/генератор картины 2год/main.cpp (154):
+
+    152:              {
+    153:                 menu_pic[npic].visible = false;
+=>  154:                       if(menu_pic[npic].category == btn[nbutton].category)
+    155:                       {
+    156:                       menu_pic[npic].visible = true;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool Button::click() at E:\Генератор картины\генератор картины 2год\main.cpp (31):
+
+     29:                 return( txMouseButtons() == 1 &
+     30:                 txMouseX()>x & txMouseX() < x+width &
+=>   31:                 txMouseY()>y & txMouseY() < y+height );
+     32:     }
+     33: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 11 2024 17:32:28, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 11 2024 17:32:59
+
+Run file:	E:\Генератор картины\генератор картины 2год\main.exe
+Directory:	E:\Генератор картины\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Генератор картины\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00452803 в функции size() в файле d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x005C0059 в модуле E:\Генератор картины\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0xE5C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00452803 in E:\Генератор картины\генератор картины 2год\main.exe: size() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004B368C in E:\Генератор картины\генератор картины 2год\main.exe: operator==<char>() at d:/codeblocks/mingw/include/c++/4.8.1/new (57):
+
+     55:   {
+     56:   public:
+=>   57:     bad_alloc() throw() { }
+     58: 
+     59:     // This declaration is not useless:
+
+# 2 0x0042CCDA in E:\Генератор картины\генератор картины 2год\main.exe: main() at E:/Генератор картины/генератор картины 2год/main.cpp (154):
+
+    152:              {
+    153:                 menu_pic[npic].visible = false;
+=>  154:                       if(menu_pic[npic].category == btn[nbutton].category)
+    155:                       {
+    156:                       menu_pic[npic].visible = true;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool Button::click() at E:\Генератор картины\генератор картины 2год\main.cpp (31):
+
+     29:                 return( txMouseButtons() == 1 &
+     30:                 txMouseX()>x & txMouseX() < x+width &
+=>   31:                 txMouseY()>y & txMouseY() < y+height );
+     32:     }
+     33: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 11 2024 18:04:48, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 11 2024 18:05:20
+
+Run file:	E:\Генератор картины\генератор картины 2год\main.exe
+Directory:	E:\Генератор картины\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Генератор картины\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00452803 в функции size() в файле d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x005C0059 в модуле E:\Генератор картины\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0xE5C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00452803 in E:\Генератор картины\генератор картины 2год\main.exe: size() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004B368C in E:\Генератор картины\генератор картины 2год\main.exe: operator==<char>() at d:/codeblocks/mingw/include/c++/4.8.1/new (57):
+
+     55:   {
+     56:   public:
+=>   57:     bad_alloc() throw() { }
+     58: 
+     59:     // This declaration is not useless:
+
+# 2 0x0042CCDA in E:\Генератор картины\генератор картины 2год\main.exe: main() at E:/Генератор картины/генератор картины 2год/main.cpp (154):
+
+    152:              {
+    153:                 menu_pic[npic].visible = false;
+=>  154:                       if(menu_pic[npic].category == btn[nbutton].category)
+    155:                       {
+    156:                       menu_pic[npic].visible = true;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool Button::click() at E:\Генератор картины\генератор картины 2год\main.cpp (31):
+
+     29:                 return( txMouseButtons() == 1 &
+     30:                 txMouseX()>x & txMouseX() < x+width &
+=>   31:                 txMouseY()>y & txMouseY() < y+height );
+     32:     }
+     33: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 11 2024 18:04:48, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 11 2024 18:05:21
+
+Run file:	E:\Генератор картины\генератор картины 2год\main.exe
+Directory:	E:\Генератор картины\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Генератор картины\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004528F3 в функции size() в файле d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x005C0059 в модуле E:\Генератор картины\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRe0, Thread: 0x2180 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004528F3 in E:\Генератор картины\генератор картины 2год\main.exe: size() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004B377C in E:\Генератор картины\генератор картины 2год\main.exe: operator==<char>() at d:/codeblocks/mingw/include/c++/4.8.1/new (57):
+
+     55:   {
+     56:   public:
+=>   57:     bad_alloc() throw() { }
+     58: 
+     59:     // This declaration is not useless:
+
+# 2 0x0042CCDA in E:\Генератор картины\генератор картины 2год\main.exe: main() at E:/Генератор картины/генератор картины 2год/main.cpp (154):
+
+    152:              {
+    153:                 menu_pic[npic].visible = false;
+=>  154:                       if(menu_pic[npic].category == btn[nbutton].category)
+    155:                       {
+    156:                       menu_pic[npic].visible = true;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool Button::click() at E:\Генератор картины\генератор картины 2год\main.cpp (31):
+
+     29:                 return( txMouseButtons() == 1 &
+     30:                 txMouseX()>x & txMouseX() < x+width &
+=>   31:                 txMouseY()>y & txMouseY() < y+height );
+     32:     }
+     33: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 14 2024 17:06:45, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 14 2024 17:07:45
+
+Run file:	E:\Генератор картины\генератор картины 2год\main.exe
+Directory:	E:\Генератор картины\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Генератор картины\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004528F3 в функции size() в файле d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x005C0059 в модуле E:\Генератор картины\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRe0, Thread: 0x2180 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004528F3 in E:\Генератор картины\генератор картины 2год\main.exe: size() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004B377C in E:\Генератор картины\генератор картины 2год\main.exe: operator==<char>() at d:/codeblocks/mingw/include/c++/4.8.1/new (57):
+
+     55:   {
+     56:   public:
+=>   57:     bad_alloc() throw() { }
+     58: 
+     59:     // This declaration is not useless:
+
+# 2 0x0042CCDA in E:\Генератор картины\генератор картины 2год\main.exe: main() at E:/Генератор картины/генератор картины 2год/main.cpp (154):
+
+    152:              {
+    153:                 menu_pic[npic].visible = false;
+=>  154:                       if(menu_pic[npic].category == btn[nbutton].category)
+    155:                       {
+    156:                       menu_pic[npic].visible = true;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool Button::click() at E:\Генератор картины\генератор картины 2год\main.cpp (31):
+
+     29:                 return( txMouseButtons() == 1 &
+     30:                 txMouseX()>x & txMouseX() < x+width &
+=>   31:                 txMouseY()>y & txMouseY() < y+height );
+     32:     }
+     33: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 14 2024 17:06:45, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 14 2024 17:07:46
+
+Run file:	E:\Генератор картины\генератор картины 2год\main.exe
+Directory:	E:\Генератор картины\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Генератор картины\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004528F3 в функции size() в файле d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x000002C9 в модуле E:\Генератор картины\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRe0, Thread: 0xB6C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004528F3 in E:\Генератор картины\генератор картины 2год\main.exe: size() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004B377C in E:\Генератор картины\генератор картины 2год\main.exe: operator==<char>() at d:/codeblocks/mingw/include/c++/4.8.1/new (57):
+
+     55:   {
+     56:   public:
+=>   57:     bad_alloc() throw() { }
+     58: 
+     59:     // This declaration is not useless:
+
+# 2 0x0042CCDA in E:\Генератор картины\генератор картины 2год\main.exe: main() at E:/Генератор картины/генератор картины 2год/main.cpp (154):
+
+    152:              {
+    153:                 menu_pic[npic].visible = false;
+=>  154:                       if(menu_pic[npic].category == btn[nbutton].category)
+    155:                       {
+    156:                       menu_pic[npic].visible = true;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool Button::click() at E:\Генератор картины\генератор картины 2год\main.cpp (31):
+
+     29:                 return( txMouseButtons() == 1 &
+     30:                 txMouseX()>x & txMouseX() < x+width &
+=>   31:                 txMouseY()>y & txMouseY() < y+height );
+     32:     }
+     33: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 14 2024 17:23:17, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 14 2024 17:23:50
+
+Run file:	E:\Генератор картины\генератор картины 2год\main.exe
+Directory:	E:\Генератор картины\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Генератор картины\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004528F3 в функции size() в файле d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x000002C9 в модуле E:\Генератор картины\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRe0, Thread: 0xB6C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004528F3 in E:\Генератор картины\генератор картины 2год\main.exe: size() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004B377C in E:\Генератор картины\генератор картины 2год\main.exe: operator==<char>() at d:/codeblocks/mingw/include/c++/4.8.1/new (57):
+
+     55:   {
+     56:   public:
+=>   57:     bad_alloc() throw() { }
+     58: 
+     59:     // This declaration is not useless:
+
+# 2 0x0042CCDA in E:\Генератор картины\генератор картины 2год\main.exe: main() at E:/Генератор картины/генератор картины 2год/main.cpp (154):
+
+    152:              {
+    153:                 menu_pic[npic].visible = false;
+=>  154:                       if(menu_pic[npic].category == btn[nbutton].category)
+    155:                       {
+    156:                       menu_pic[npic].visible = true;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool Button::click() at E:\Генератор картины\генератор картины 2год\main.cpp (31):
+
+     29:                 return( txMouseButtons() == 1 &
+     30:                 txMouseX()>x & txMouseX() < x+width &
+=>   31:                 txMouseY()>y & txMouseY() < y+height );
+     32:     }
+     33: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 14 2024 17:23:17, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 14 2024 17:23:50
+
+Run file:	E:\Генератор картины\генератор картины 2год\main.exe
+Directory:	E:\Генератор картины\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Генератор картины\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00452A13 в функции size() в файле d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x00000058 в модуле E:\Генератор картины\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRe0, Thread: 0x2B10 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00452A13 in E:\Генератор картины\генератор картины 2год\main.exe: size() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004B389C in E:\Генератор картины\генератор картины 2год\main.exe: operator==<char>() at d:/codeblocks/mingw/include/c++/4.8.1/new (57):
+
+     55:   {
+     56:   public:
+=>   57:     bad_alloc() throw() { }
+     58: 
+     59:     // This declaration is not useless:
+
+# 2 0x0042CDD2 in E:\Генератор картины\генератор картины 2год\main.exe: main() at E:/Генератор картины/генератор картины 2год/main.cpp (156):
+
+    154:              {
+    155:                 menu_pic[npic].visible = false;
+=>  156:                       if(menu_pic[npic].category == btn[nbutton].category)
+    157:                       {
+    158:                       menu_pic[npic].visible = true;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool Button::click() at E:\Генератор картины\генератор картины 2год\main.cpp (31):
+
+     29:                 return( txMouseButtons() == 1 &
+     30:                 txMouseX()>x & txMouseX() < x+width &
+=>   31:                 txMouseY()>y & txMouseY() < y+height );
+     32:     }
+     33: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 14 2024 17:36:43, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 14 2024 17:37:21
+
+Run file:	E:\Генератор картины\генератор картины 2год\main.exe
+Directory:	E:\Генератор картины\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Генератор картины\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00452A13 в функции size() в файле d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x00000058 в модуле E:\Генератор картины\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRe0, Thread: 0x2B10 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00452A13 in E:\Генератор картины\генератор картины 2год\main.exe: size() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004B389C in E:\Генератор картины\генератор картины 2год\main.exe: operator==<char>() at d:/codeblocks/mingw/include/c++/4.8.1/new (57):
+
+     55:   {
+     56:   public:
+=>   57:     bad_alloc() throw() { }
+     58: 
+     59:     // This declaration is not useless:
+
+# 2 0x0042CDD2 in E:\Генератор картины\генератор картины 2год\main.exe: main() at E:/Генератор картины/генератор картины 2год/main.cpp (156):
+
+    154:              {
+    155:                 menu_pic[npic].visible = false;
+=>  156:                       if(menu_pic[npic].category == btn[nbutton].category)
+    157:                       {
+    158:                       menu_pic[npic].visible = true;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool Button::click() at E:\Генератор картины\генератор картины 2год\main.cpp (31):
+
+     29:                 return( txMouseButtons() == 1 &
+     30:                 txMouseX()>x & txMouseX() < x+width &
+=>   31:                 txMouseY()>y & txMouseY() < y+height );
+     32:     }
+     33: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 14 2024 17:36:43, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 14 2024 17:37:21
+
+Run file:	E:\Генератор картины\генератор картины 2год\main.exe
+Directory:	E:\Генератор картины\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: D:\Хайрулов Иван\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0045263C в функции _M_is_leaked() в файле d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x000001CA в модуле D:\Хайрулов Иван\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRe0, Thread: 0x1DFC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0045263C in D:\Хайрулов Иван\генератор картины 2год\main.exe: _M_is_leaked() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004816FB in D:\Хайрулов Иван\генератор картины 2год\main.exe: swap() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x004890C9 in D:\Хайрулов Иван\генератор картины 2год\main.exe: operator=() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0044CC29 in D:\Хайрулов Иван\генератор картины 2год\main.exe: operator=() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0042C20E in D:\Хайрулов Иван\генератор картины 2год\main.exe: main() at D:/Хайрулов Иван/генератор картины 2год/main.cpp (97):
+
+     95:     btn[2] = {390, 10, 170, 45, "персонажи", "персонажи"};
+     96:     btn[3] = {580, 10, 170, 45, "мебель", "мебель"};
+=>   97:     btn[4] = {580, 10, 170, 45, "растения", "растения"};
+     98: 
+     99:     //картинки в меню
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at D:\Хайрулов Иван\генератор картины 2год\main.cpp (79):
+
+     77:         {
+     78:     txCreateWindow (1500, 800);
+=>   79:     txTextCursor(false);
+     80:     //кол-во кнопок
+     81:     int count_btn = 4;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2024 17:14:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2024 17:15:14
+
+Run file:	D:\Хайрулов Иван\генератор картины 2год\main.exe
+Directory:	D:\Хайрулов Иван\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Хайрулов Иван\генератор картины 2год\main.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0045263C в функции _M_is_leaked() в файле d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x000001CA в модуле D:\Хайрулов Иван\генератор картины 2год\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRe0, Thread: 0x1DFC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0045263C in D:\Хайрулов Иван\генератор картины 2год\main.exe: _M_is_leaked() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004816FB in D:\Хайрулов Иван\генератор картины 2год\main.exe: swap() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x004890C9 in D:\Хайрулов Иван\генератор картины 2год\main.exe: operator=() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0044CC29 in D:\Хайрулов Иван\генератор картины 2год\main.exe: operator=() at d:/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0042C20E in D:\Хайрулов Иван\генератор картины 2год\main.exe: main() at D:/Хайрулов Иван/генератор картины 2год/main.cpp (97):
+
+     95:     btn[2] = {390, 10, 170, 45, "персонажи", "персонажи"};
+     96:     btn[3] = {580, 10, 170, 45, "мебель", "мебель"};
+=>   97:     btn[4] = {580, 10, 170, 45, "растения", "растения"};
+     98: 
+     99:     //картинки в меню
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at D:\Хайрулов Иван\генератор картины 2год\main.cpp (79):
+
+     77:         {
+     78:     txCreateWindow (1500, 800);
+=>   79:     txTextCursor(false);
+     80:     //кол-во кнопок
+     81:     int count_btn = 4;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2024 17:14:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2024 17:15:15
+
+Run file:	D:\Хайрулов Иван\генератор картины 2год\main.exe
+Directory:	D:\Хайрулов Иван\генератор картины 2год
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Хайрулов Иван\генератор картины 2год\main.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13180, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+Если вы указали параметр "dc", то он неверен.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005092FC (32-bit), Flags: Cmdre0, Thread: 0x4B8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0041CC40 in D:\Хайрулов Иван\генератор картины 2год\main.exe: txSetFillColor() at d:/codeblocks/mingw/include/txlib.h (13180)
+
+# 1 0x0042BE32 in D:\Хайрулов Иван\генератор картины 2год\main.exe: main() at D:/Хайрулов Иван/генератор картины 2год/main.cpp (78):
+
+     76: int main()
+     77:         {
+=>   78:     txSetFillColor (TX_YELLOW);
+     79:     txCreateWindow (1500, 800);
+     80:     txTextCursor(false);
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC) at d:\codeblocks\mingw\include\txlib.h (13180):
+
+  13178: HBRUSH txSetFillColor (COLORREF color, HDC dc /*= txDC()*/)
+  13179:     {
+=>13180: $1  if (_TX_DEFAULT_HDC_FAILED (dc)) return NULL;
+  13181: 
+  13182: $   HBRUSH brush = (color == TX_TRANSPARENT)? (HBRUSH) Win32::GetStockObject (HOLLOW_BRUSH) : Win32::CreateSolidBrush (color);
+
+# 1 in int main() at D:\Хайрулов Иван\генератор картины 2год\main.cpp (78):
+
+     76: int main()
+     77:         {
+=>   78:     txSetFillColor (TX_YELLOW);
+     79:     txCreateWindow (1500, 800);
+     80:     txTextCursor(false);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2024 18:02:57, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2024 18:03:16
+
+Run file:	D:\Хайрулов Иван\генератор картины 2год\main.exe
+Directory:	D:\Хайрулов Иван\генератор картины 2год
+
+--------------------------------------------------

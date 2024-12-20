@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1726494706 source:e:\Генератор картины\генератор картины 2год\main.cpp
+	"TXLib.h"
+
+1734095386 source:d:\хайрулов иван\генератор картины 2год\main.cpp
+	"TXLib.h"
+	<fstream>
+	<windows.h>
+	<string.h>
+	<dirent.h>
+
